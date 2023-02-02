@@ -5,16 +5,17 @@
     --color-green-3: #126C7F;
     --color-green-4: #124654;
     --color-green-5: #122935;
-
     /* Tonalidades de colores AZULEZ */
     --color-blue-1: #0FFFF8;
-    --color-blue-1: #03C8FA;
-    --color-blue-1: #0980AC;
-    --color-blue-1: #0E4965;
-    --color-blue-1: #131D2B;
+    --color-blue-2: #03C8FA;
+    --color-blue-3: #0980AC;
+    --color-blue-4: #0E4965;
+    --color-blue-5: #131D2B;
 }
 
+
 /* CSS General */
+
 html {
     margin: 0;
     padding: 0;
@@ -40,6 +41,8 @@ main {
 
 
 /* ------- MEDIA QUERYS CSS ------- */
+
+
 /* CSS Nav - Main (más de 720px) */
 
 @media (min-width: 720px) {
@@ -54,23 +57,19 @@ main {
         overflow-x: 20%;
         background-color: var(--color-green-5);
     }
-
     .nav-as ul {
         padding: 10px;
     }
-
     header {
         background-color: var(--color-green-2);
         height: 150px;
         margin: 0 auto;
         margin-left: 280px;
     }
-
     .div-header {
         padding: 0;
         margin: 0 auto;
     }
-
     .main-as {
         margin-left: 310px;
         padding: 20px;
@@ -78,35 +77,37 @@ main {
     }
 }
 
+
 /* ------- MEDIA QUERYS CSS ------- */
+
+
 /* CSS Nav - Main (menos de 720px) */
 
 @media (max-width: 720px) {
-
     .nav-as,
     .nav-as ul,
     .nav-as li,
     .nav-as a {
         display: none;
     }
-
     header {
         background-color: var(--color-green-2);
         height: 150px;
         margin: 0 auto;
     }
-
     .div-header {
         padding: 0;
         margin: 0 auto;
     }
-
     .main-as {
         margin: 0 auto;
         max-width: 720px;
         padding: 20px;
     }
 }
+
+
+/* CSS - NavBar */
 
 .nav-as a {
     color: #f2f2f2;
@@ -123,7 +124,48 @@ main {
     font-size: 0.9rem;
 }
 
+
 /* CSS Cajas de información de Incidentes */
+
+section>h2 {
+    font-size: 2.3em;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline;
+    margin-top: 55px;
+    margin-bottom: 0;
+}
+
+section>p {
+    text-align: justify;
+    text-indent: 1em;
+    margin: 5px 0;
+}
+
+.article-incidente {
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.article-incidente>h2 {
+    color: var(--color-blue-3);
+    text-transform: uppercase;
+    font-size: 1.4em;
+    margin-top: 10px;
+}
+
+.container-incidente {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+.container-incidente>p {
+    text-indent: 1rem;
+    margin: 5px 0;
+}
 
 .span-nota-incidentes {
     font-style: italic;
