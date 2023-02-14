@@ -175,7 +175,7 @@ section>p {
 
 .container-incidente>p {
     text-indent: 1rem;
-    margin: 5px 0;
+    margin: 15px 0;
 }
 
 .span-nota-incidentes {
@@ -189,7 +189,7 @@ section>p {
 .div-preguntas-incidentes {
     max-width: 600px;
     padding: 10px 15px;
-    margin: 0 auto;
+    margin: 15px auto;
     font-size: 0.8rem;
     font-style: oblique;
     border-radius: 10px;
@@ -209,4 +209,11 @@ iframe {
     width: 100%;
     height: 400px;
     margin: 0 auto;
+}
+
+
+/* Elementos Transitorios */
+
+.subnav-as {
+    display: none;
 }
